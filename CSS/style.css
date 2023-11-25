@@ -1,0 +1,197 @@
+/* paleta de colores */
+.colores {
+  color: #b8bdd9, /* clarito */ #676ba9; /* oscuro  */
+}
+
+/* Fondo de la página de inicio */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif !important;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("/Img/backgroun\ body.jpg");
+}
+
+/* Estilo del navbar blanco con letras negras al inicio */
+.navbar {
+  height: 60px;
+  color: black; /* Letras en blanco */
+  background-color: rgba(242, 242, 242, 0.8); /* Fondo blanco con opacidad */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Agregar transición suave */
+}
+
+/* Estilo del navbar transparente con letras blancas al desplazarse */
+.navbar-scrolled {
+  background-color: #b8bdd9; /* Fondo transparente */
+  color: black; /* Letras en blanco */
+}
+
+/* Estilo del botón de menú en el navbar transparente */
+.navbar-toggler-icon {
+  background-color: #fff; /* Icono de menú en blanco */
+}
+
+/* Estilo del enlace en el navbar blanco al inicio */
+.navbar a.nav-link {
+  color: #000 !important; /* Letras en negro */
+}
+
+/* Estilo del enlace en el navbar transparente al desplazarse */
+.navbar-scrolled a.nav-link {
+  color: black !important; /* Letras en blanco */
+}
+
+/* Estilo de los contenedores con gradientes */
+.container#Aboutme {
+  margin-top: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    #f0f0f0,
+    #e0e0e0
+  ); /* Gradient de color */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.me {
+  margin-left: auto;
+  margin-top: 10px;
+  justify-content: center;
+  border-color: #000 30px solid;
+
+  border-radius: 20px;
+  width: 100%;
+  height: 50%;
+}
+
+/* Estilos del marco */
+.frame {
+  margin: 5px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden; /* Oculta el borde cuando se agranda */
+}
+
+/* Estilos del marco al hacer clic (animación) */
+.frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border: 2px solid #676ba9; /* Cambia el color del borde al hacer hover */
+}
+
+.container-fluid#Projects .card {
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to bottom,
+    #f0f0f0,
+    #e0e0e0
+  ); /* Gradient de color */
+  border-radius: 10px;
+}
+
+.container-fluid#Contact {
+  background: linear-gradient(
+    to bottom,
+    #b8bdd9,
+    #e0e0e0
+  ); /* Gradient de color */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Estilo de la sección de proyectos */
+.container-fluid#Projects .card img {
+  height: 200px; 
+  width: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.container-fluid#Projects h2.section-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: var(--color-tertiary);
+}
+
+/* Estilo de los botones en las tarjetas de proyectos */
+.container-fluid#Projects .card a.btn-primary {
+  background-color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
+  border-radius: 10px;
+}
+
+/* Estilo de los botones al pasar el mouse */
+.container-fluid#Projects .card a.btn-primary:hover {
+  background-color: #212529;
+  border-color: #212529;
+  height: 20px;
+  height: 20px;
+}
+
+/* Estilo de imagenes proyectos */
+.imgProyectos {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Estilo de los botones next slider imagenes */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #676ba9;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* game */
+.game {
+  background: linear-gradient(
+    to bottom,
+    #b8bdd9,
+    #e0e0e0
+  ); /* Gradient de color */
+  position: relative;
+  width: 100%; /* Ajusta el ancho al 80% del contenedor padre */
+  height: 370px; /* Aumenta la altura */
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dino {
+  position: absolute;
+  bottom: 0;
+  left: 10%; /* Ajusta la posición izquierda al 10% del contenedor */
+  width: 30%; 
+  height: 25%;
+  padding-bottom: 10%; /* Mantén una relación de aspecto cuadrada */
+  background: url('/Img/dino.png') center / cover no-repeat;
+}
+
+.obstacle {
+  position: absolute;
+  bottom: 0;
+  right: 10%; /* Ajusta la posición derecha al 10% del contenedor */
+  width: 10%; /* Ajusta el tamaño al 15% del contenedor */
+  padding-bottom: 10%; /* Mantén una relación de aspecto cuadrada */
+  background: url('/Img/cactus.png') center / cover no-repeat;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5vw; /* Tamaño de fuente relativo a la ventana */
+  font-weight: bold;
+  color: #676ba9;
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Img/icons8-diamond-heart-50.png" />
+    <title>Michelle Mejía</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <nav
+        class="navbar navbar-expand-sm navbar-dark fixed-top navbar-transparent"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand nav-link nav-item" href="#">
+            <img src="/Img/icons8-diamond-heart-50.png" alt="" class="m-4" />
+            Dev Junior
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Aboutme">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+    <!-- About me container -->
+    <div class="container" id="Aboutme">
+      <div class="row">
+        <!-- Columna para la foto y el juego -->
+        <div class="col-md-4 mt-2">
+          <div class="d-flex flex-column align-items-center">
+            <img src="/Img/foto.jpg" alt="Mi Foto" class="me" />
+
+            <!-- Game -->
+            <div class="game">
+              <div id="dinosaur" class="dino"></div>
+              <div id="cactus" class="obstacle"></div>
+              <div class="score">Puntos: <span id="score">0</span></div>
+            </div>
+            <!-- End Game -->
+          </div>
+        </div>
+
+        <!-- Columna para la biografía -->
+        <div class="col-md-8 p-3">
+          <div style="background: #b8bdd9; border-radius: 10px; padding: 20px">
+            <h1>Michelle Mejía</h1>
+            <p>
+              Desarrolladora web Junior Front-end y Back-end, con habilidades en
+              diseño UI/UX y conocimientos previos.
+            </p>
+            <p><strong>FRONTEND:</strong></p>
+            <ul>
+              <li>✅HTML5</li>
+              <li>✅CSS</li>
+              <li>✅Bootstrap5</li>
+              <li>✅JavaScript</li>
+              <li>✅React</li>
+              <li>✅Redux</li>
+            </ul>
+            <p><strong>BACKEND:</strong></p>
+            <ul>
+              <li>✅Java</li>
+              <li>✅NodeJS</li>
+              <li>✅MongoDB</li>
+              <li>✅Postman</li>
+              <li>✅Express</li>
+              <li>✅Fastify</li>
+            </ul>
+            <p><strong>MOVILES:</strong></p>
+            <ul>
+              <li>✅Expo Go</li>
+              <li>✅React Native</li>
+            </ul>
+            <p>
+              Con experiencia en proyectos independientes y habilidades de
+              liderazgo, poseo un nivel de inglés B2. Mi enfoque proactivo hacia
+              el aprendizaje constante y la mejora refleja mi compromiso con la
+              adaptabilidad y la eficiencia en cada proyecto asignado.
+            </p>
+            <p>
+              Perfil GitHub: 👉
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/22michelle"
+                >https://github.com/22michelle</a
+              >
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid" id="Projects">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-title text-dark fw-bold">Mis Proyectos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4 mt-2">
+          <div
+            id="carouselProyecto1"
+            class="carousel slide frame card"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="imgProyectos"
+                  src="/Img/peliculas.png"
+                  alt="Proyecto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/películas2.png" alt="Proyecto 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/películas3.png" alt="Proyecto 1" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselProyecto1"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselProyecto1"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Film Plot</h5>
+              <p class="card-text">
+                Página web de películas hecho con ✅React, ✅Redux, ✅SASS,
+                ✅NodeJS, ✅JavaScript, consumo de API.
+              </p>
+              <a
+                href="https://film-plot.vercel.app/"
+                target="_blank"
+                class="btn btn-dark"
+                >Demo</a
+              >
+              
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-md-4 mt-2">
+          <div
+            id="carouselProyecto2"
+            class="carousel slide frame card"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Img/notas.png" alt="Proyecto 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/notas3.png" alt="Proyecto 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/notas2.png" alt="Proyecto 2" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselProyecto2"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselProyecto2"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Block de Notas</h5>
+              <p class="card-text">
+                Página web para crear notas, hecho con ✅React ✅Bootstrap5
+                ✅JavaScript ✅CSS Backend hecho con ✅MongoDB ✅Fastify
+                ✅Postman ✅NodeJS.
+              </p>
+              <a
+                target="_blank"
+                href="https://blocknotes-nine.vercel.app/"
+                class="btn btn-dark"
+                >Demo</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-md-4 mt-2">
+          <div
+            id="carouselProyecto3"
+            class="carousel slide frame card"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Img/Yamaha.png" alt="Proyecto 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/Yamaha2.png" alt="Proyecto 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/Yamaha3.png" alt="Proyecto 3" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselProyecto3"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselProyecto3"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Yamaha</h5>
+              <p class="card-text">
+                Prototipo Yamaha para ver el estado de mantenimiento de las
+                motocicletas de cada cliente registrado. Hecho con ✅React
+                ✅Bootstrap5 ✅CSS.
+              </p>
+              <a
+                target="_blank"
+                href="https://yamaha-orpin.vercel.app/"
+                class="btn btn-dark"
+                >Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Proyecto 4 -->
+        <div class="col-md-4 mt-2">
+          <div
+            id="carouselProyecto4"
+            class="carousel slide frame card"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Img/IMC.png" alt="Proyecto 4" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/IMC2.png" alt="Proyecto 4" />
+              </div>
+              <div class="carousel-item">
+                <img src="/Img/IMC3.png" alt="Proyecto 4" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselProyecto4"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselProyecto4"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">IMC</h5>
+
+              <p class="card-text">
+                Calculadora de masa corporal hecho con ✅CSS, ✅HTML5,
+                ✅JavaScript
+              </p>
+              
+              <button
+                target="_blank"
+                rel="noopener noreferrer"
+                rel="noopener noreferrer"
+                href="https://weight-goals-6r5t5ifpw-22michelle.vercel.app"
+                class="btn btn-dark"
+                >Demo</buttton
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de proyectos -->
+
+    <!-- Contact -->
+    <div class="container-fluid" id="Contact">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-title fw-bold text-dark">Contacto</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mt-2">
+          <h4>Información de Contacto</h4>
+          <p>
+            <i class="fas fa-envelope"></i> Correo electrónico:
+            michellemejiaparra4@gmail.com
+          </p>
+          <p><i class="fas fa-phone"></i> Teléfono: +57 3012326423</p>
+        </div>
+        <div class="col-md-6 mt-2">
+          <h4>Formulario de Contacto</h4>
+          <form action="https://formspree.io/f/xqkvgjgj" method="POST">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="correo"
+                name="correo"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control"
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section style="background: #000000; padding: 1em; margin-top: 50px">
+      <p align="center">
+        <font color="#fff" size="2" face="Arial"
+          >Copyright © 2023 | Todos los derechos &reg; <br />Create by Michelle
+          Mejía</font
+        >
+      </p>
+    </section>
+
+    <!-- Scripts.js/Ts -->
+    <link rel="import" href="/JS/typescript.ts" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/21506e9718.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
